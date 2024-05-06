@@ -51,12 +51,6 @@ function PostModalPopup() {
     }
   };
 
-  // Move onChange handler outside of postContent function
-  const handleImageChange = (e) => {
-    console.log("File selected:", e.target.files[0]);
-    setImage(e.target.files[0]);
-  };
-
   return (
     <div>
       <div className="container justify-content-between">
@@ -82,7 +76,6 @@ function PostModalPopup() {
           onChange={(value) => setContent(value)}
         />
       </div>
-      {/* Use handleImageChange for file input onChange */}
       <div className="d-flex justify-content-end mt-5">
         <button type="button" className="btn btn-primary" onClick={postContent}>
           Add Post
