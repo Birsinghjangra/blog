@@ -1,2 +1,2 @@
 [build]
-  command = "npm install --force 
+  command = "npm i --f && npm start --f"
