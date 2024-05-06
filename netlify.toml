@@ -1,2 +1,3 @@
 [build]
-  command = "npm i --f && npm start --f"
+  command = "node server.js"
+  functions = "functions/"
