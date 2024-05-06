@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const connectDB = require('../backend/Database/db'); 
-const authRoutes = require('../backend/routes/authRoutes');
+const connectDB = require('./backend/Database/db'); 
+const authRoutes = require('./backend/routes/authRoutes');
 const session = require("express-session");
-const postRoutes= require("./routes/postRoutes")
+const postRoutes= require("./backend/routes/postRoutes")
 
 const app = express();
 const PORT =  3001;
